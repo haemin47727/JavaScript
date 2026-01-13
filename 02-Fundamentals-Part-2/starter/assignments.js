@@ -63,12 +63,38 @@
 //   capital: "Seoul",
 //   language: "Korean",
 //   population: 50,
-//   neighbors: ["China", "Japan"]
+//   neighbors: ["China", "Japan"],
+//   describe: function () {
+//     console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbors.length} neighbouring countries and a capital called ${this.capital}.`);
+//   },
+//   checkIsland: function () {
+//     this.isIsland = this.neighbors.length === 0 ? true : false;
+//     return this.isIsland;
+//   }
 // };
-// console.log(myCountry);
+// // console.log(myCountry);
+// console.log(myCountry.describe());
+// console.log(myCountry.checkIsland());
 
 // console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbors.length} neighbouring countries and a capital called ${myCountry.capital}.`);
 // myCountry.population += 2;
 // console.log(myCountry.population);
 // myCountry.population -= 2;
 // console.log(myCountry.population);
+
+//Iteration: The for Loop//
+// for (let voter = 1; voter <= 10; voter++) {
+//   console.log(`voter number ${voter} is currently voting.`);
+// }
+
+//Looping Arrays, Breaking and Continuing//
+// const populations = [50, 5, 15, 100];
+// function percentageOfWorld1(population) {
+//   return population / 7900 * 100;
+// }
+
+// const percentage2 = [];
+// for (let i = 0; i < populations.length; i++) {
+//   percentage2.push(percentageOfWorld1(populations[i]));
+// }
+// console.log(percentage2);
